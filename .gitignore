@@ -7,4 +7,9 @@ wheels/
 *.egg-info
 
 # Virtual environments
-.venv
+/.venv/
+
+#self added
+/data/raw/
+.DS_Store
+/temp/
