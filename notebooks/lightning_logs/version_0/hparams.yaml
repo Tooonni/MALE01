@@ -1,0 +1,488 @@
+config: !!python/object:deeptabular.configs.mambular_config.DefaultMambularConfig
+  AD_weight_decay: true
+  BC_layer_norm: false
+  activation: !!python/object:torch.nn.modules.activation.SiLU
+    _backward_hooks: !!python/object/apply:collections.OrderedDict
+    - []
+    _backward_pre_hooks: !!python/object/apply:collections.OrderedDict
+    - []
+    _buffers: {}
+    _forward_hooks: !!python/object/apply:collections.OrderedDict
+    - []
+    _forward_hooks_always_called: !!python/object/apply:collections.OrderedDict
+    - []
+    _forward_hooks_with_kwargs: !!python/object/apply:collections.OrderedDict
+    - []
+    _forward_pre_hooks: !!python/object/apply:collections.OrderedDict
+    - []
+    _forward_pre_hooks_with_kwargs: !!python/object/apply:collections.OrderedDict
+    - []
+    _is_full_backward_hook: null
+    _load_state_dict_post_hooks: !!python/object/apply:collections.OrderedDict
+    - []
+    _load_state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+    - []
+    _modules: {}
+    _non_persistent_buffers_set: !!set {}
+    _parameters: {}
+    _state_dict_hooks: !!python/object/apply:collections.OrderedDict
+    - []
+    _state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+    - []
+    inplace: false
+    training: true
+  batch_norm: false
+  bias: false
+  bidirectional: false
+  cat_encoding: int
+  conv_bias: false
+  d_conv: 4
+  d_model: 64
+  d_state: 128
+  dilation: 1
+  dropout: 0.0
+  dt_init: random
+  dt_init_floor: 0.0001
+  dt_max: 0.1
+  dt_min: 0.0001
+  dt_rank: auto
+  dt_scale: 1.0
+  embedding_activation: !!python/object:torch.nn.modules.linear.Identity
+    _backward_hooks: !!python/object/apply:collections.OrderedDict
+    - []
+    _backward_pre_hooks: !!python/object/apply:collections.OrderedDict
+    - []
+    _buffers: {}
+    _forward_hooks: !!python/object/apply:collections.OrderedDict
+    - []
+    _forward_hooks_always_called: !!python/object/apply:collections.OrderedDict
+    - []
+    _forward_hooks_with_kwargs: !!python/object/apply:collections.OrderedDict
+    - []
+    _forward_pre_hooks: !!python/object/apply:collections.OrderedDict
+    - []
+    _forward_pre_hooks_with_kwargs: !!python/object/apply:collections.OrderedDict
+    - []
+    _is_full_backward_hook: null
+    _load_state_dict_post_hooks: !!python/object/apply:collections.OrderedDict
+    - []
+    _load_state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+    - []
+    _modules: {}
+    _non_persistent_buffers_set: !!set {}
+    _parameters: {}
+    _state_dict_hooks: !!python/object/apply:collections.OrderedDict
+    - []
+    _state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+    - []
+    training: true
+  embedding_bias: false
+  embedding_projection: true
+  embedding_type: linear
+  expand_factor: 2
+  frequencies_init_scale: 0.01
+  head_activation: !!python/object:torch.nn.modules.activation.SELU
+    _backward_hooks: !!python/object/apply:collections.OrderedDict
+    - []
+    _backward_pre_hooks: !!python/object/apply:collections.OrderedDict
+    - []
+    _buffers: {}
+    _forward_hooks: !!python/object/apply:collections.OrderedDict
+    - []
+    _forward_hooks_always_called: !!python/object/apply:collections.OrderedDict
+    - []
+    _forward_hooks_with_kwargs: !!python/object/apply:collections.OrderedDict
+    - []
+    _forward_pre_hooks: !!python/object/apply:collections.OrderedDict
+    - []
+    _forward_pre_hooks_with_kwargs: !!python/object/apply:collections.OrderedDict
+    - []
+    _is_full_backward_hook: null
+    _load_state_dict_post_hooks: !!python/object/apply:collections.OrderedDict
+    - []
+    _load_state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+    - []
+    _modules: {}
+    _non_persistent_buffers_set: !!set {}
+    _parameters: {}
+    _state_dict_hooks: !!python/object/apply:collections.OrderedDict
+    - []
+    _state_dict_pre_hooks: !!python/object/apply:collections.OrderedDict
+    - []
+    inplace: false
+    training: true
+  head_dropout: 0.5
+  head_layer_sizes: []
+  head_skip_layers: false
+  head_use_batch_norm: false
+  layer_norm: false
+  layer_norm_after_embedding: false
+  layer_norm_eps: 1.0e-05
+  lr: 0.0001
+  lr_factor: 0.1
+  lr_patience: 10
+  mamba_version: mamba-torch
+  n_frequencies: 48
+  n_layers: 4
+  norm: RMSNorm
+  plr_lite: false
+  pooling_method: avg
+  shuffle_embeddings: false
+  use_cls: false
+  use_embeddings: false
+  use_learnable_interaction: false
+  use_pscan: false
+  weight_decay: 1.0e-06
+early_pruning_threshold: null
+family: null
+feature_information: !!python/tuple
+- cat_Credit_Mix_Bad:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  cat_Credit_Mix_Good:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  cat_Credit_Mix_Standard:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  cat_Credit_Mix_Unknown:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  cat_Month_April:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  cat_Month_August:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  cat_Month_February:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  cat_Month_January:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  cat_Month_July:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  cat_Month_June:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  cat_Month_March:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  cat_Month_May:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  cat_Occupation_Accountant:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  cat_Occupation_Architect:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  cat_Occupation_Developer:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  cat_Occupation_Doctor:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  cat_Occupation_Engineer:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  cat_Occupation_Entrepreneur:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  cat_Occupation_Journalist:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  cat_Occupation_Lawyer:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  cat_Occupation_Manager:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  cat_Occupation_Mechanic:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  cat_Occupation_Media Manager:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  cat_Occupation_Musician:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  cat_Occupation_Scientist:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  cat_Occupation_Teacher:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  cat_Occupation_Unknown:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  cat_Occupation_Writer:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Accounts_per_Loan:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Age:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Amount_invested_monthly:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Amount_invested_monthly_log1p:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Annual_Income:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Annual_Income_log1p:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Changed_Credit_Limit:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Credit_Age_Gap:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Credit_History_Age:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Credit_History_Months:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Credit_History_to_Age:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Credit_Mix_Score:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Credit_Utilization_Ratio:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Credit_Utilization_x_Delay:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Debt_To_Income_Ratio:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Delay_Impact:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Delay_Impact_log1p:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Delay_from_due_date:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Delay_per_Loan:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Delayed_Payment_Ratio:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Disposable_Income:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Disposable_Income_Ratio:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_EMI_To_Income_Ratio:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Expense_Burden_Ratio:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Has_Not_Specified_Loan:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Income_Per_Credit_Inquiry:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Income_Per_Loan:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Interest_Rate:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Invest_To_Income_Ratio:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Is_Min_Payment_Unknown:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Is_Payment_Behaviour_Unknown:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_LoanType_Credit-Builder_Loan:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_LoanType_Debt_Consolidation_Loan:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_LoanType_Home_Equity_Loan:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_LoanType_Payday_Loan:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_LoanType_Student_Loan:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Loan_Types_Count:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Monthly_Balance:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Monthly_Balance_log1p:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Monthly_Inhand_Salary:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Monthly_Inhand_Salary_log1p:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Num_Bank_Accounts:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Num_Credit_Card:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Num_Credit_Inquiries:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Num_Credit_Inquiries_log1p:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Num_of_Delayed_Payment:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Num_of_Loan:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Outstanding_Debt:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Outstanding_Debt_log1p:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Payment_Spent_Level:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Payment_Value_Level:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Pays_Min_Amount_Score:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Savings_To_Salary_Ratio:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Total_EMI_per_month:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Total_EMI_per_month_log1p:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+  num_Utilization_per_Card:
+    categories: null
+    dimension: 1
+    preprocessing: imputer -> minmax -> standardization
+- {}
+- {}
+loss_fct: null
+lr: 0.0001
+lr_factor: 0.1
+lr_patience: 10
+lss: false
+num_classes: 3
+optimizer_args: {}
+optimizer_type: Adam
+pruning_epoch: 5
+train_metrics: null
+val_metrics: null
+weight_decay: 1.0e-06
